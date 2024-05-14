@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2317443188115688"
+     crossorigin="anonymous"></script>
+  <script async src="https://fundingchoicesmessages.google.com/i/pub-2317443188115688?ers=1" nonce="aexioe9PpaXH3VFK7-AXPA"></script><script nonce="aexioe9PpaXH3VFK7-AXPA">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+</head>
+
+<body>
+  <div id="chancebox">
+     <div style="color:#376cff" class="chance">x</div>
+  <div style="color:#ff4545"  class="chance">o</div>
+  </div>
+
+  <div id="vs-img">
+    <span>O</span>
+    <img src="{{url_for('static',filename='vs.png')}}" alt="pngtree-red-blue-vs-metal-font-png-image-5976481-removebg-preview" border="0">
+    <span>X</span>
+  </div
+    >
+
+  <div id="mode-cont">
+    <span class="close">X</span>
+  <div id="mode">
+     <div id="mode-x" class="mode-type"></div>
+     <div id="mode-o" class="mode-type"></div>
+  </div>
+ </div>
+  <div id="percent_div">
+     <div id="percent">
+
+     </div>
+     <div id="percent_no">
+
+     </div>
+
+  </div>
+
+   <h2 id="mode-text">
+   <span>choose </span><span> x</span>
+<span>or</span><span> o</span>
+</h2>
+  <div class="two-btn">
+     <span id="play-btn"><i class="fa-solid fa-play"></i></span>
+    <span class="history-btn"><i class="fa-solid fa-clock-rotate-left"></i></span>
+  </div>
+  <div id="container">
+     <table class="">
+        <tr>
+          <td data-set="0"  class="cells"></td>
+          <td data-set="1" class="cells"></td>
+          <td data-set="2" class="cells"></td>
+        </tr>
+       <tr>
+         <td data-set="0" class="cells"></td>
+         <td data-set="1" class="cells"></td>
+         <td data-set="2" class="cells"></td>
+       </tr>
+       <tr>
+         <td data-set="0" class="cells"></td>
+          <td data-set="1" class="cells"></td>
+          <td data-set="2" class="cells"></td>
+       </tr>
+     </table>
+  </div>
+   <div class="two-btn">
+  <span id="r-btn"><i class="fa-solid fa-arrow-rotate-right"></i>
+    </span>
+    <span class="history-btn">
+    <i class=" fa-solid fa-regular fa-list"></i></span>
+
+
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+
+</body>
+
+</html>
